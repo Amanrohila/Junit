@@ -1,13 +1,12 @@
-package com.aman.junit.junit.Example;
+package com.aman.junit.junit.example;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+import org.junit.Test;
 
-@SpringBootTest
-class JunitExampleApplicationTests {
-
-	@Test
-	void contextLoads() {
-	}
-
-}
+//@SpringBootTest
+//class JunitExampleApplicationTests {
+//
+//	@Test
+//	void contextLoads() {
+//	}
+//
+//}

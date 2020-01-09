@@ -1,4 +1,4 @@
-# Junit
+# Junit and Sonar Qube
 
 # Sonar Integration Step 
 1. Add plugin into POM

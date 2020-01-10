@@ -7,6 +7,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.aman.junit.junit.example.utills.Util;
+
 @Service
 public class PersonService {
 
@@ -14,11 +16,11 @@ public class PersonService {
 
 	@Autowired
 	PersonDao dao;
-	
+
 //	public PersonService() {
 //		persons.add(new Person(1, "aman", Constant.lastName, 28));
 //	}
-	
+
 	public List<Person> getPersons() {
 		return persons;
 	}
@@ -54,14 +56,30 @@ public class PersonService {
 		persons.add(person);
 		return person;
 	}
-	
-	
-	public int calculation(int a,int b) {
+
+	public int calculation(int a, int b) {
 		int c = dao.add(a, b);
 		return c;
-		
+
 	}
-	
-	
+
+	public int doMinus(int a, int b) {
+		return Util.minus(a, b);
+	}
+
+	public int multiply(int a, int b) {
+
+		return doMultiply(a, b);
+	}
+
+	private int doMultiply(int a, int b) {
+		int c = 5;
+		return a * b * c;
+	}
+
+	public final int doCal(int a, int b) {
+		int c = 5;
+		return a * b * c;
+	}
 
 }

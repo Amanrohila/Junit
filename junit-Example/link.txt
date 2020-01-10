@@ -2,3 +2,7 @@ https://www.youtube.com/watch?v=BuT1Ji0P9Ug
 https://www.sonarqube.org/downloads/
 https://docs.sonarqube.org/latest/analysis/scan/sonarscanner-for-maven/
 http://localhost:9000/
+
+
+junit
+https://examples.javacodegeeks.com/core-java/mockito/powermock-mockito-integration-example/

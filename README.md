@@ -1,4 +1,4 @@
-# Junit and Sonar Qube
+# Junit
 
 # Sonar Integration Step 
 1. Add plugin into POM
@@ -26,4 +26,7 @@ http://localhost:9000/about
 Help>eclipse marketplace>enter sonar lint> installed
 
 more info can find on images section
+
+
+# Mockito and junit test cases
 

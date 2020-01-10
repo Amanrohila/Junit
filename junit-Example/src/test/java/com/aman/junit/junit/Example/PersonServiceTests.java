@@ -89,4 +89,19 @@ public class PersonServiceTests {
 		assertEquals(c, value);
 	}
 	
+	@Test
+	public void doMinusTest() {
+		int a = 5;
+		int b=1;
+		int c = 4;
+//		when(Util.minus(a, b)).thenReturn(c);
+		int value = personService.doMinus(a, b);
+		assertEquals(c, value);
+	}
+
+	
+	
+	
+	
+	
 }

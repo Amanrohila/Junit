@@ -57,6 +57,13 @@ public class PersonService {
 		return person;
 	}
 
+	public void removePersons() {
+		dao.clearList(persons);
+	}
+
+
+	
+
 	public int calculation(int a, int b) {
 		int c = dao.add(a, b);
 		return c;

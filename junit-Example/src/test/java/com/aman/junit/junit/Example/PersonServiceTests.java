@@ -2,11 +2,14 @@ package com.aman.junit.junit.example;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
+import static org.mockito.Mockito.doNothing;
 import static org.mockito.Mockito.when;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.InjectMocks;
@@ -37,6 +40,11 @@ public class PersonServiceTests {
 		personService.getAllPersons().add(person);
 	}
 
+	@After
+    public void destroy() {
+		personService.getAllPersons().clear();
+    }
+	
 	@Test
 	public void getAllPersonsTest() {
 		List<Person> persons = personService.getAllPersons();
@@ -98,10 +106,12 @@ public class PersonServiceTests {
 		int value = personService.doMinus(a, b);
 		assertEquals(c, value);
 	}
+	
+	@Test
+	public void removePersonsTest() {
+		List<Person> persons = new ArrayList<Person>();
+		doNothing().when(dao).clearList(persons );
+		personService.removePersons();
+	}
 
-	
-	
-	
-	
-	
 }
